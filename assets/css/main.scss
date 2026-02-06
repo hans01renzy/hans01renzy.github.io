@@ -1,0 +1,16 @@
+---
+# Only the main Sass file needs front matter (the dashes)
+---
+
+@charset "utf-8";
+@import "minimal-mistakes";
+
+.sidebar {
+  background-color: #e6f7ff; 
+  padding: 10px;             
+  border-radius: 8px;        
+}
+
+.sidebar a {
+    color: #333;             
+}
