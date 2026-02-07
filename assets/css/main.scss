@@ -3,14 +3,23 @@
 ---
 
 @charset "utf-8";
+
+/* 1. LOAD YOUR CHOSEN SKIN (MINT) FIRST */
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; 
+
+/* 2. THEN LOAD THE REST OF THE THEME */
 @import "minimal-mistakes";
 
-.sidebar {
-  background-color: #e6f7ff; 
-  padding: 10px;             
-  border-radius: 8px;        
+/* --- START OF CUSTOM CSS --- */
+
+/* Your Author Profile changes are below here... */
+.author__profile {
+  background-color: #f2f3f4; 
+  padding: 15px;             
+  border-radius: 10px;       
+  border: 1px solid #ddd;    
 }
 
-.sidebar a {
-    color: #333;             
+.author__profile a {
+    color: #333 !important;
 }
