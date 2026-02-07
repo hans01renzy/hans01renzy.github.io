@@ -1,7 +1,41 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-author_profile: true
+layout: splash
+permalink: /
+hidden: true
+header:
+  overlay_color: "#5e616c"  # A nice dark grey background
+  overlay_image: /assets/images/home-header.jpg # OPTIONAL: Put a big image here later!
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  cta_label: "View My Resume"
+  cta_url: "/assets/documents/resume.pdf" # Link to your resume later
+excerpt: >
+  I am a Data Analyst specializing in **R**, **Tableau**, and **Business Intelligence**.
+  <br /> <small><a href="/about/">Learn more about me</a></small>
+
+feature_row:
+  - image_path: /assets/images/tableau-icon.png # You'll need to add these images later
+    alt: "Tableau"
+    title: "Tableau Dashboards"
+    excerpt: "Interactive visualizations solving real business problems."
+    url: "https://public.tableau.com/profile/YOUR_NAME"
+    btn_label: "View Gallery"
+    btn_class: "btn--primary"
+
+  - image_path: /assets/images/r-icon.png
+    alt: "R Projects"
+    title: "R Programming"
+    excerpt: "Statistical analysis, data cleaning, and shiny apps."
+    url: "https://github.com/YOUR_NAME"
+    btn_label: "View Code"
+    btn_class: "btn--primary"
+
+  - image_path: /assets/images/writing-icon.png
+    alt: "Blog"
+    title: "Technical Writing"
+    excerpt: "Tutorials and thoughts on the latest data trends."
+    url: "/year-archive/"
+    btn_label: "Read Blog"
+    btn_class: "btn--primary"
 ---
+
+{% include feature_row %}
